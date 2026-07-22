@@ -57,7 +57,11 @@ const Skills = () => {
           </a>
         </div>
         <div className="box">
-          <a href="https://mybrytfmonline.com/postpartum-stress-a-growing-challenge-on-ghanaian-mothers/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://mybrytfmonline.com/postpartum-stress-a-growing-challenge-on-ghanaian-mothers/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={skill2Image} alt="skill 2" className="skill-image" />
           </a>
         </div>
