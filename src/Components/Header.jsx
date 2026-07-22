@@ -11,7 +11,7 @@ const Header = ({ currentPage, onNavigate }) => {
   const navItems = [
     { label: "Home", page: "home" },
     { label: "About", page: "about" },
-    { label: "Portfolio", page: "portfolio" },
+    { label: "Projects", page: "portfolio" },
     { label: "Work Experience", page: "experience" },
     { label: "Skills", page: "skills" },
     { label: "Contact", page: "contact" },

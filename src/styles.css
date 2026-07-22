@@ -54,19 +54,21 @@ section img.background {
   margin: 3rem auto;
   text-align: left;
   min-height: 540px;
-  padding-right: 320px;
+  /* allow content to flow around a floated about image */
+  padding-right: 4rem;
 }
 
 .about-image {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
+  /* float image so text wraps around it on wide screens */
+  float: right;
   width: 280px;
   max-width: 30%;
   max-height: calc(100% - 4rem);
   height: auto;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
   border-radius: 14px;
-  object-fit: contain;
+  object-fit: cover;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
@@ -78,6 +80,7 @@ section img.background {
 
   .about-image {
     position: static;
+    float: none;
     width: 100%;
     max-width: 420px;
     margin: 0 auto 2rem;
@@ -169,3 +172,51 @@ img.socialIcon {
   height: 30px;
   width: 30px;
 }
+
+/* Work experience images */
+.experience-images {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.experience-images img {
+  width: 48%;
+  border-radius: 8px;
+  object-fit: cover;
+  max-height: 180px;
+}
+
+@media (max-width: 900px) {
+  .experience-images img {
+    width: 100%;
+    max-height: none;
+  }
+}
+
+/* Center Work Experience tile(s) horizontally and constrain their width
+#experience .container {
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 420px));
+}
+
+#experience .container .box {
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+}
+
+#experience .container .box h3,
+#experience .container .box p {
+  text-align: center;
+}
+
+#experience .container .box ul {
+  text-align: left;
+  max-width: 84%;
+  margin: 0 auto;
+}
+
+#experience .experience-images {
+  justify-content: center;
+} */
