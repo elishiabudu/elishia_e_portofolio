@@ -24,19 +24,27 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+  "Hello! I am Elishia Budu, an aspiring broadcast journalist passionate about storytelling, news reporting, and community development. Though academic training and practical experience at GBC Radio Central, I have developed the skills needed to gather information, conduct interviews, write compelling news stories, and produce quality broadcast content. I aspire to join Ghana Broadcasting Corporation (GBC) to contribute to its reputation for credible journalism while growing into an outstanding media professional. I am a Communication Studies student with a strong interest in journalism, media production, and digital storytelling. My passion lies in uncovering issues affecting communities and presenting them in ways that encourage public dialogue and positive change. I enjoy working in fast-paced environments where teamwork, creativity and accuracy are essential.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+  "✔️ News Writing",
+  "✔️ Broadcast Script Writing",
+  "✔️ Feature Writing",
+  "✔️ News Editing",
+  "✔️ Interviewing",
+  "✔️ Story Development",
+  "✔️ Documentary Production",
+  "✅ Communication",
+  "✅ Teamwork",
+  "✅ Leadership",
+  "✅ Time Management",
+  "✅ Critical Thinking",
+  "✅ Adaptability",
+  "✅ Problem Solving",
 ];
 
 /**
@@ -45,7 +53,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+  "To secure the position of Broadcast Journalist at Multimedia Group Limited where I can use my reporting, research and storytelling skills to produce informative and impactful news content while continuously developing professionally.";
 
 const About = () => {
   return (
