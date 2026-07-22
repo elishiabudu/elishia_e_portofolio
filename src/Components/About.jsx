@@ -17,8 +17,10 @@ import React from "react";
  * freely use on your site.
  */
 import image from "../images/motion-background.jpg";
+import aboutImage from "../images/about.jpeg";
 
 const imageAltText = "purple and blue abstract background";
+const aboutImageAltText = "Photo of Elishia Budu";
 
 /**
  * Sort description that expands on your title on the Home component.
@@ -39,26 +41,6 @@ const achievementsList = [
   "Strengthened news writing and reporting abilities.",
 ];
 
-const technicalSkills = [
-  "✔ News Writing",
-  "✔ Broadcast Script Writing",
-  "✔ Feature Writing",
-  "✔ News Editing",
-  "✔ Interviewing",
-  "✔ Story Development",
-  "✔ Documentary Production",
-];
-
-const softSkillsList = [
-  "Communication",
-  "Teamwork",
-  "Leadership",
-  "Time Management",
-  "Critical Thinking",
-  "Adaptability",
-  "Problem Solving",
-];
-
 /**
  * Use this to give more information about what you are passionate about,
  * how you best work, or even a quote. This will help someone learn more
@@ -69,48 +51,14 @@ const About = () => {
   return (
     <section className="padding" id="about">
       <img className="background" src={image} alt={imageAltText} />
-      <div
-        style={{
-          backgroundColor: "white",
-          width: "50%",
-          padding: "4rem",
-          margin: "3rem auto",
-          textAlign: "center",
-        }}
-      >
+      <div className="about-content">
+        <img src={aboutImage} alt={aboutImageAltText} className="about-image" />
         <h2>About Me</h2>
         <p className="large">{description}</p>
-        <h3 style={{ textAlign: "left", marginTop: "2rem" }}>Career Objective</h3>
-        <p style={{ textAlign: "left", margin: "0 0 1.5rem" }}>{careerObjective}</p>
-        <h3 style={{ textAlign: "left", marginTop: "1rem" }}>Education</h3>
-        <p style={{ textAlign: "left", margin: "0 0 2rem" }}>{education}</p>
-        <hr />
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: "2rem",
-            textAlign: "left",
-            margin: "2rem 0",
-          }}
-        >
-          <div>
-            <h3>Technical Skills</h3>
-            <ul style={{ columns: 1, paddingLeft: "1rem" }}>
-              {technicalSkills.map((skill) => (
-                <li key={skill}>{skill}</li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3>Soft Skills</h3>
-            <ul style={{ columns: 1, paddingLeft: "1rem" }}>
-              {softSkillsList.map((skill) => (
-                <li key={skill}>{skill}</li>
-              ))}
-            </ul>
-          </div>
-        </div>
+        <h3 style={{ marginTop: "2rem" }}>Career Objective</h3>
+        <p style={{ margin: "0 0 1.5rem" }}>{careerObjective}</p>
+        <h3 style={{ marginTop: "1rem" }}>Education</h3>
+        <p style={{ margin: "0 0 2rem" }}>{education}</p>
         <hr />
         <div style={{ textAlign: "left", marginTop: "2rem" }}>
           <h3>Achievements</h3>

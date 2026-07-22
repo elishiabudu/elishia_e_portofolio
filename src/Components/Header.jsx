@@ -5,8 +5,18 @@
  * user scrolls so that they can constantly reach any part of your page.
  */
 import React from "react";
+import PropTypes from "prop-types";
 
-const Header = () => {
+const Header = ({ currentPage, onNavigate }) => {
+  const navItems = [
+    { label: "Home", page: "home" },
+    { label: "About", page: "about" },
+    { label: "Portfolio", page: "portfolio" },
+    { label: "Work Experience", page: "experience" },
+    { label: "Skills", page: "skills" },
+    { label: "Contact", page: "contact" },
+  ];
+
   return (
     <div
       style={{
@@ -21,13 +31,36 @@ const Header = () => {
         zIndex: 10,
       }}
     >
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#experience">Experience</a>
-      <a href="#footer">Contact</a>
+      {navItems.map((item) => (
+        <button
+          key={item.page}
+          type="button"
+          onClick={() => onNavigate(item.page)}
+          style={{
+            background: currentPage === item.page ? "rgba(78, 86, 126, 0.12)" : "transparent",
+            border: currentPage === item.page ? "1px solid #4E567E" : "1px solid transparent",
+            borderRadius: "999px",
+            cursor: "pointer",
+            fontWeight: currentPage === item.page ? "700" : "400",
+            color: currentPage === item.page ? "#4E567E" : "#000",
+            padding: "0.5rem 0.85rem",
+          }}
+        >
+          {item.label}
+        </button>
+      ))}
     </div>
   );
+};
+
+Header.defaultProps = {
+  currentPage: "home",
+  onNavigate: () => {},
+};
+
+Header.propTypes = {
+  currentPage: PropTypes.string,
+  onNavigate: PropTypes.func,
 };
 
 export default Header;
