@@ -26,12 +26,16 @@ const aboutImageAltText = "Photo of Elishia Budu";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "Hello! I am Elishia Budu, an aspiring broadcast journalist passionate about storytelling, news reporting, and community development. Through academic training and practical experience at GBC Radio Central, I have developed the skills needed to gather information, conduct interviews, write compelling news stories, and produce quality broadcast content. I aspire to join Ghana Broadcasting Corporation (GBC) to contribute to its reputation for credible journalism while growing into an outstanding media professional.";
+`I am a dedicated Communication Studies student with a keen interest in journalism, public service broadcasting, and development communication.
+
+My experience at GBC Radio Central strengthened my ability to research, write, and present news stories while maintaining high standards of accuracy, fairness, and professionalism.
+
+I enjoy working with communities to tell stories that inspire positive change and contribute to national development.`;
 
 const careerObjective =
-  "To secure the position of Broadcast Journalist at Multimedia Group Limited where I can use my reporting, research and storytelling skills to produce informative and impactful news content while continuously developing professionally.";
+  "To obtain the position of Broadcast Journalist at the Ghana Broadcasting Corporation, where I can apply my knowledge of journalism, storytelling, and community reporting to produce credible, informative, and impactful news content while supporting GBC's mission of public service broadcasting.";
 
-const education = "University of Education, Winneba — 2023/2026";
+const education = "University of Education, Winneba — 2023 - 2026";
 
 const achievementsList = [
   "Successfully completed internship at GBC Radio Central.",

@@ -193,6 +193,20 @@ img.socialIcon {
   }
 }
 
+/* Skill tiles images */
+.skill-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+  .skill-image {
+    height: auto;
+  }
+}
+
 /* Center Work Experience tile(s) horizontally and constrain their width
 #experience .container {
   justify-items: center;
