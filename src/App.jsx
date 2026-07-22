@@ -11,6 +11,7 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Portfolio from "./Components/Portfolio";
+import WorkExperience from "./Components/WorkExperience";
 
 import "./styles.css";
 
@@ -27,6 +28,8 @@ const siteProps = {
   name: "Elishia Budu",
   title: "Journalist",
   email: "elishiabudu@gmail.com",
+  phone: "+233 256287362",
+  location: "Winneba, Ghana",
   gitHub: "elishiabudu",
   instagram: "",
   linkedIn: "",
@@ -45,6 +48,7 @@ const App = () => {
       <Home name={siteProps.name} title={siteProps.title} />
       <About />
       <Portfolio />
+      <WorkExperience />
       <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
     </div>
   );

@@ -31,7 +31,7 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "Water Crisis Report 💦💧",
+    title: "Water Crisis Report",
     description: [
       "Produced a news story highlighting the lack of potable water in Kadadwen.",
       "Conducted field interviews.",
@@ -42,10 +42,10 @@ const projectList = [
     url: "",
   },
   {
-    title: "Documentary Project Abasraba East Flooding",
+    title: "Documentary Project: Abasraba East Flooding",
     description: [
       "Investigated the annual flooding affecting residents and students in Winneba.",
-      "Covered issues such as: Flooding, Poor sanitation, Housing challenges, and Environmental management",
+      "Covered issues such as flooding, poor sanitation, housing challenges, and environmental management.",
     ],
     url: "",
   },
@@ -62,9 +62,9 @@ const projectList = [
 const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
+      <h2 style={{ textAlign: "left" }}>Portfolio</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
+        <div style={{ maxWidth: "40%", alignSelf: "left" }}>
           <img
             src={image}
             style={{ height: "90%", width: "100%", objectFit: "cover" }}
@@ -74,9 +74,13 @@ const Portfolio = () => {
         <div className="container">
           {projectList.map((project) => (
             <div className="box" key={project.title}>
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
-              </a>
+              {project.url ? (
+                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                  <h3>{project.title}</h3>
+                </a>
+              ) : (
+                <h3>{project.title}</h3>
+              )}
               <ul className="small" style={{ margin: 0, paddingLeft: "1rem" }}>
                 {project.description.map((point, index) => (
                   <li key={index}>{point}</li>

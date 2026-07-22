@@ -35,6 +35,8 @@ const Footer = (props) => {
     linkedIn,
     medium,
     name,
+    phone,
+    location,
     primaryColor,
     twitter,
     youTube,
@@ -113,6 +115,18 @@ const Footer = (props) => {
           </a>
         )}
       </div>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.5rem" }}>
+        {phone && (
+          <p className="small" style={{ margin: 0, color: "white" }}>
+            {phone}
+          </p>
+        )}
+        {location && (
+          <p className="small" style={{ margin: 0, color: "white" }}>
+            {location}
+          </p>
+        )}
+      </div>
       <p className="small" style={{ marginTop: 0, color: "white" }}>
         Created by {name}
       </p>
@@ -133,7 +147,9 @@ Footer.propTypes = {
   medium: PropTypes.string,
   name: PropTypes.string.isRequired,
   primaryColor: PropTypes.string,
+  phone: PropTypes.string,
   twitter: PropTypes.string,
+  location: PropTypes.string,
   youTube: PropTypes.string,
 
 };
