@@ -31,28 +31,31 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
-    description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+    title: "Water Crisis Report 💦💧",
+    description: [
+      "Produced a news story highlighting the lack of potable water in Kadadwen.",
+      "Conducted field interviews.",
+      "Gathered evidence from residents.",
+      "Wrote a balanced news story.",
+      "Raised awareness of community challenges.",
+    ],
+    url: "",
   },
   {
-    title: "Web Development for Beginners",
-    description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+    title: "Documentary Project Abasraba East Flooding",
+    description: [
+      "Investigated the annual flooding affecting residents and students in Winneba.",
+      "Covered issues such as: Flooding, Poor sanitation, Housing challenges, and Environmental management",
+    ],
+    url: "",
   },
   {
     title: "My Resume Site",
-    description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
-  },
-  {
-    title: "GitHub Codespaces and github.dev",
-    description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+    description: [
+      "Created from Microsoft's resume workshop and deployed to GitHub pages.",
+      "Includes my experience and design abilities.",
+    ],
+    url: "https://github.com/elishiabudu/elishia_e_portofolio",
   },
 ];
 
@@ -74,7 +77,11 @@ const Portfolio = () => {
               <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
               </a>
-              <p className="small">{project.description}</p>
+              <ul className="small" style={{ margin: 0, paddingLeft: "1rem" }}>
+                {project.description.map((point, index) => (
+                  <li key={index}>{point}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
