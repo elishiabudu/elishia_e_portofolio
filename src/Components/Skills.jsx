@@ -5,6 +5,7 @@
  */
 
 import React from "react";
+import newscasterPic from "../images/newscaster_pic.jpeg";
 import skill1Image from "../images/skill_1.jpeg";
 import skill2Image from "../images/skill_2.jpeg";
 
@@ -38,6 +39,7 @@ const Skills = () => {
               <li key={skill}>{skill}</li>
             ))}
           </ul>
+          <img src={newscasterPic} alt="Newscaster" className="skill-image" />
         </div>
         <div className="box">
           <h3>Soft Skills</h3>
